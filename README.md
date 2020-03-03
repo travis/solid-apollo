@@ -1,8 +1,7 @@
 # solid-apollo
 
 [![npm version][npmv-image]][npmv-url]
-[![build status][travis-image]][travis-url]
-[![coverage status][codecov-image]][codecov-url]
+[![travis](https://circleci.com/gh/travis/solid-apollo.svg?style=svg)](https://circleci.com/gh/travis/solid-apollo)
 [![npm downloads][npmd-image]][npmd-url]
 
 > apollo client for solid
