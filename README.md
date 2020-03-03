@@ -28,6 +28,8 @@ const App = () => (
 );
 ```
 
+See https://github.com/travis/solid-apollo-example/ for a working example.
+
 ## Installation
 
 ```
@@ -36,7 +38,7 @@ $ npm install solid-apollo
 
 ## License
 
-MIT
+Hippocratic License
 
 [travis-image]: https://img.shields.io/travis/travis/solid-apollo/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/travis/solid-apollo
