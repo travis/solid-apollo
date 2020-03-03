@@ -1,6 +1,6 @@
 {
   "name": "solid-apollo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "apollo client for solid",
   "main": "dist/index.js",
   "module": "dist/solid-apollo.esm.js",
@@ -42,7 +42,7 @@
     "typescript"
   ],
   "author": "Travis Vachon <travis.vachon@gmail.com>",
-  "license": "MIT",
+  "license": "Hippocratic License",
   "bugs": {
     "url": "github:travis/solid-apollo/issues"
   },
