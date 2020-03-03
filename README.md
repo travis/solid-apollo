@@ -28,7 +28,7 @@ const App = () => (
 );
 ```
 
-See https://github.com/travis/solid-apollo-example/ for a working example.
+See [travis/solid-apollo-example](https://github.com/travis/solid-apollo-example/) for a working example.
 
 ## Installation
 
