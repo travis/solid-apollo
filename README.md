@@ -10,52 +10,29 @@
 ## Basic Usage
 
 ```jsx
-import React from 'react'
-import { render } from 'react-dom'
+import { ApolloProvider } from '@apollo/react-hooks';
+import { ApolloClient } from 'apollo-client'
+import { SolidLink } from 'solid-apollo'
 
-render(, document.getElementById('root'))
-```
+const client = new ApolloClient({
+  cache: new InMemoryCache({ addTypename: false }),
+  link: new SolidLink(context, ["https://tvachon.inrupt.net/profile/card#me"])
+})
 
-## Live Examples
-
-- [Basic Usage](https://codesandbox.io/)
-- [API Example](https://codesandbox.io/)
-- [UMD Build (Development)](https://codesandbox.io/)
-- [UMD Build (Production)](https://codesandbox.io/)
-
-## API
-
-**Props**
-
-- `foo` - Something something.
-- `bar` - _Optional_ Something something. Defaults to `null`.
-
-**Example**
-
-```jsx
+const App = () => (
+  <ApolloProvider client={client}>
+    <div>
+      <h2>My first Apollo app</h2>
+    </div>
+  </ApolloProvider>
+);
 ```
 
 ## Installation
 
 ```
-$ npm install solid-apollo --save
+$ npm install solid-apollo
 ```
-
-There are also UMD builds available via [unpkg](https://unpkg.com/):
-
-- https://unpkg.com/solid-apollo/dist/solid-apollo.umd.development.js
-- https://unpkg.com/solid-apollo/dist/solid-apollo.umd.production.js
-
-For the non-minified development version, make sure you have already included:
-
-- [`React`](https://unpkg.com/react/umd/react.development.js)
-- [`ReactDOM`](https://unpkg.com/react-dom/umd/react-dom.development.js)
-- [`PropTypes`](https://unpkg.com/prop-types/prop-types.js)
-
-For the minified production version, make sure you have already included:
-
-- [`React`](https://unpkg.com/react/umd/react.production.min.js)
-- [`ReactDOM`](https://unpkg.com/react-dom/umd/react-dom.production.min.js)
 
 ## License
 
